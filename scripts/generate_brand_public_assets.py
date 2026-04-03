@@ -32,6 +32,11 @@ WORDMARK_X = (
     "L409.54 42.41L429.06 72.00ZM393.20 72.00L378.51 72.00L397.09 44.71L407.24 49.54L393.20 72.00ZM428.12 20.95L409.83 48.10L399.68 43.20L413.43 20.95L428.12 20.95Z"
 )
 WORDMARK_TOP = 20.02
+LOCKUP_SYMBOL_X = 18
+LOCKUP_SYMBOL_Y = 32
+LOCKUP_SYMBOL_SCALE = 0.84
+LOCKUP_WORDMARK_X = 109
+LOCKUP_WORDMARK_Y = 38
 
 
 def reset_public() -> None:
@@ -107,8 +112,8 @@ def mark_svg(second_color: str, *, background: str | None = None) -> str:
 
 
 def lockup_svg(second_color: str, text_color: str) -> str:
-    body = f"""{symbol_group(second_color, x=22, y=30)}
-  {wordmark_group(text_color, x=118, y=38, scale=1)}"""
+    body = f"""{symbol_group(second_color, x=LOCKUP_SYMBOL_X, y=LOCKUP_SYMBOL_Y, scale=LOCKUP_SYMBOL_SCALE)}
+  {wordmark_group(text_color, x=LOCKUP_WORDMARK_X, y=LOCKUP_WORDMARK_Y, scale=1)}"""
     return svg_document(
         "0 0 560 140",
         body,
@@ -215,20 +220,39 @@ def write_assets() -> None:
 def write_public_readme() -> None:
     write_public_file(
         "README.md",
-        """# UNBOUNDX Public Assets
+        """# UNBOUNDX Brand Kit
 
-This folder contains the current delivery-ready assets for the latest `index.html` brand site.
+UNBOUNDX 当前最终版品牌资产包，围绕 `Gravity Arcs` 极简弧线系统展开，适合直接交付给设计、市场、产品与开发团队。
 
-- `index.html` / `unboundx-brand-guidelines-dark.html`：线上部署页
-- `logos/`：最终 Logo 的 SVG / PNG 交付文件
-- `materials/`：主视觉、海报、封面与启动页等常用品牌物料
-- `downloads/`：打包好的下载压缩包
+## Official Links
+
+- Website: `https://logo.unboundx.tech`
+- Repository: `https://github.com/Jackiexiao/unboundx-logo`
+
+## Included
+
+- `index.html` / `unboundx-brand-guidelines-dark.html`：线上品牌规范页
+- `logos/svg/`：Logo 矢量源文件
+- `logos/png/`：Logo 透明背景位图
+- `materials/svg/`：主视觉、封面、海报、启动页等矢量物料
+- `materials/png/`：常用交付位图
+- `downloads/`：已打包的压缩包
+
+## Usage Notes
+
+- 深色背景优先使用 `unboundx-lockup-dark.*`
+- 浅色背景优先使用 `unboundx-lockup-light.*`
+- 头像、Favicon、App 图标优先使用 `unboundx-mark-*`
+
+## Ownership
+
+本仓库与品牌资产版权归 `自由维度（深圳）科技有限公司` 所有。
 """,
     )
 
 
 def deployify_html(html: str) -> str:
-    return html.replace('href="public/downloads/', 'href="./downloads/')
+    return html.replace('="public/', '="./')
 
 
 def sync_deploy_pages() -> None:
