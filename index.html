@@ -158,7 +158,7 @@
       content: ''; position: absolute;
       width: 600px; height: 600px;
       background: var(--brand-accent);
-      filter: blur(200px); opacity: 0.08;
+      filter: blur(200px); opacity: 0.12;
       z-index: -1; top: 50%; right: 10%;
       transform: translateY(-50%);
       border-radius: 50%;
@@ -171,19 +171,19 @@
 
     .hero-title {
       font-family: var(--font-en);
-      font-size: clamp(3rem, 6vw, 5.5rem);
-      font-weight: 900; letter-spacing: -0.03em;
-      line-height: 1.1; margin-bottom: 24px;
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
+      font-weight: 900; letter-spacing: -0.04em;
+      line-height: 1.05; margin-bottom: 24px;
     }
     
     .hero-title span { color: var(--brand-accent); }
 
     .hero-subtitle {
-      font-size: 1.1rem; color: var(--text-secondary);
-      line-height: 1.8; max-width: 600px;
+      font-size: 1.15rem; color: var(--text-secondary);
+      line-height: 1.8; max-width: 680px;
       font-weight: 400; margin-bottom: 40px;
     }
-    .hero-subtitle strong { color: var(--text-primary); font-weight: 500; }
+    .hero-subtitle strong { color: var(--text-primary); font-weight: 600; }
     .hero-pills,
     .hero-actions {
       display: flex;
@@ -204,37 +204,37 @@
     }
     .hero-actions {
       margin-bottom: 18px;
+      gap: 16px;
     }
     .hero-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
+      min-height: 48px;
+      padding: 0 24px;
       border-radius: 999px;
       border: 1px solid var(--surface-2);
       color: var(--text-primary);
       text-decoration: none;
+      font-weight: 600;
       background: transparent;
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
     }
     .hero-link:hover {
       background: var(--surface-2);
+      transform: translateY(-1px);
     }
     .hero-link-primary {
       background: var(--brand-accent);
       border-color: var(--brand-accent);
       color: var(--text-primary);
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(242, 97, 34, 0.2);
     }
     .hero-link-primary:hover {
       background: #D9541B;
       border-color: #D9541B;
-    }
-    .hero-note {
-      max-width: 720px;
-      color: var(--text-tertiary);
-      font-size: 0.92rem;
-      line-height: 1.8;
+      box-shadow: 0 6px 24px rgba(242, 97, 34, 0.3);
     }
 
     /* === Section General === */
@@ -792,21 +792,18 @@
       </div>
       <div class="hero-title">Beyond <span>Dimensions.</span></div>
       <div class="hero-subtitle">
-        <strong>自由维度（深圳）科技有限公司 · Creator Jackie</strong><br>
-        “自由维度”是这家公司最核心的精神原点：自由、不受限、独立维度、超越常规、活出自我。我们彻底抛弃了旧 Logo 里复杂的框体和多余线条，只留下两条最纯粹的引力弧线；而 <strong>X</strong> 在这里不只是字母，更是「维度」本身。
+        “自由维度”是 <strong>UNBOUNDX</strong> 最核心的精神原点：自由、不受限、超越常规。<br>
+        以极简的引力弧线勾勒出独立维度，<strong>X</strong> 在这里不仅是字母，更是通向无限可能的「维度」本身。
       </div>
       <div class="hero-pills">
         <span class="hero-pill">自由维度 / Free Dimensions</span>
         <span class="hero-pill">X = Dimension</span>
         <span class="hero-pill">Gravity Arcs / 引力弧线</span>
-        <span class="hero-pill">Deep Void 黑曜石体系</span>
+        <span class="hero-pill">Deep Void / 黑曜石体系</span>
       </div>
       <div class="hero-actions">
         <a href="#logo" class="hero-link hero-link-primary">Explore Identity</a>
-        <a href="unboundx-brand-guidelines-dark.html" class="hero-link">Open Dark Preview</a>
-      </div>
-      <div class="hero-note">
-        最新深色规范页同步输出为 <strong>unboundx-brand-guidelines-dark.html</strong>。当前页面与下载物料均基于这套黑曜石（Deep Void）+ Aerospace Orange 的最终方向。
+        <a href="#downloads" class="hero-link">Download Brand Kit</a>
       </div>
     </div>
 
@@ -817,7 +814,7 @@
         <div class="section-header">
           <div class="section-tag">01. Logo System</div>
           <h2 class="section-title">Gravity Arcs / 引力弧线</h2>
-          <p class="section-desc">这是最终定稿的 Logo 方案。它不再依赖复杂框体，而是回到最本质的两条弧线：一条象征活力、人文、包容与向前引力的橙色轨迹；一条象征精准、科技、理性与秩序的冷白弧线。两者在 Deep Void 中相交，形成一个向右上方突破的极简 X —— 在 UNBOUNDX 语境里，X 就是「维度」。</p>
+          <p class="section-desc">Gravity Arcs 是 UNBOUNDX 的核心视觉图腾。回到最本质的两条弧线：一条象征活力、人文与向前引力的橙色轨迹；一条象征精准、科技与秩序的冷白弧线。两者在深色空间中相交，形成向右上方突破的极简 X，寓意进入全新的独立维度。</p>
         </div>
 
         <div class="logo-grid">
@@ -894,8 +891,8 @@
         <div class="story-grid">
           <article class="story-card">
             <div class="story-kicker">Geometry Reset</div>
-            <h3 class="story-title">只保留两笔</h3>
-            <p class="story-copy">彻底重构几何形态，抛弃旧方案中的复杂框体、辅助线和冗余层级，让 Logo 回到“两笔就能在白板上画出来”的终极状态。</p>
+            <h3 class="story-title">极简形态</h3>
+            <p class="story-copy">以最纯粹的几何形态构建品牌视觉，摒弃一切冗余装饰，让标志回归至极简、纯粹且极具辨识度的终极状态。</p>
           </article>
           <article class="story-card">
             <div class="story-kicker">Dimension</div>
@@ -920,7 +917,7 @@
         <div class="section-header">
           <div class="section-tag">02. Color System</div>
           <h2 class="section-title">The Obsidian & Orange</h2>
-          <p class="section-desc">极端深邃的 Deep Void 黑曜石背景，让核心品牌色 Aerospace Orange 爆发出最强的识别力。这不是“好看就行”的橙色，而是同时满足品牌心理学、暗色界面对比度与线下印刷稳定性的工程级品牌选择。</p>
+          <p class="section-desc">极端深邃的 Deep Void 黑曜石背景，让核心品牌色 Aerospace Orange 爆发出极强的视觉张力。这不仅是极具能量的色彩组合，更是兼顾暗色界面对比度与多端媒介稳定性的工程级视觉系统。</p>
           <div class="section-utility">
             <button type="button" class="info-button" data-dialog-open="color-rationale-dialog">Why Aerospace Orange?</button>
           </div>
@@ -985,15 +982,15 @@
             <div class="dialog-grid">
               <article class="dialog-point">
                 <strong>01 · 品牌心理学</strong>
-                <p>蓝色太安全，绿色太生态，红色过于警报化。航天橙则在硬核科技与人文温度之间取得平衡，更像一个破局者品牌，而不是保守工具品牌。</p>
+                <p>航天橙在硬核科技与人文温度之间取得完美平衡，赋予品牌破局者的锐利气质与创新活力，构建极具能量的视觉语言。</p>
               </article>
               <article class="dialog-point">
                 <strong>02 · Dark Mode 统治力</strong>
-                <p>在 Deep Void 背景上，#F26122 具备极高视觉信噪比。它能在复杂数据界面和黑色舞台中迅速抓住注意力，降低用户寻找关键操作的成本。</p>
+                <p>在 Deep Void 背景上，#F26122 具备极高视觉信噪比，能在复杂数据界面中迅速聚焦用户注意力，构建清晰的视觉层级。</p>
               </article>
               <article class="dialog-point">
-                <strong>03 · CMYK 工程稳定性</strong>
-                <p>它对应大约 `C:0 M:75 Y:95 K:0`，印刷时不容易发灰、发脏或失真。也就是说，线上网页、名片、展会背板和物料更容易保持统一。</p>
+                <strong>03 · 跨媒介稳定性</strong>
+                <p>精准设定的色彩参数，确保线上网页、UI 界面与线下印刷物料的色彩呈现保持高度统一，维持品牌视觉的绝对一致性。</p>
               </article>
             </div>
             <p class="dialog-summary">总结来说，Aerospace Orange 不只是一个主色，而是 UNBOUNDX “在未知维度中，提供清晰、安全且充满活力的指引”的视觉图腾。</p>
@@ -1006,7 +1003,7 @@
         <div class="section-header">
           <div class="section-tag">03. Typography</div>
           <h2 class="section-title">Geometric & Clean</h2>
-          <p class="section-desc">西文采用极具几何美感的 Outfit，完美契合 Logo 的弧线张力；中文采用思源黑体，保障 SaaS 界面庞大数据信息流的绝对易读性。</p>
+          <p class="section-desc">西文采用极具几何美感的 Outfit，完美契合引力弧线的视觉张力；中文选用思源黑体，保障现代数字界面庞大数据信息流的绝对易读性与专业感。</p>
         </div>
 
         <div class="typo-section">
@@ -1051,7 +1048,7 @@
         <div class="section-header">
           <div class="section-tag">04. Applications</div>
           <h2 class="section-title">Design in Action</h2>
-          <p class="section-desc">下面这些案例不只是“摆样子”的 mockup，而是围绕真实高频场景去包装：官网首屏、App 启动、社交封面、发布会主视觉、名片与仪表盘界面。目的是让这套极简弧线真正进入日常业务和品牌触点，让“自由维度”的感觉在每一次出现时都成立。</p>
+          <p class="section-desc">品牌视觉系统在真实业务场景中的落地规范：涵盖官网首屏、移动端启动页、社交媒体封面及线下发布会主视觉等核心触点。确保“自由维度”的品牌理念在每一次呈现中都保持高度一致的张力与专业感。</p>
         </div>
 
         <div class="ui-grid">
@@ -1255,7 +1252,7 @@
         <div class="section-header">
           <div class="section-tag">05. Assets</div>
           <h2 class="section-title">Brand Asset Inventory</h2>
-          <p class="section-desc">下载入口只保留在左侧边栏。这里仅展示 Brand Kit 内含的标准资产结构，方便团队知道交付包里有哪些内容。</p>
+          <p class="section-desc">完整品牌视觉资产体系，包含矢量标志、标准色彩规范与核心应用模板，确保品牌视觉资产的高效、一致交付。</p>
         </div>
 
         <div class="download-grid">
@@ -1319,8 +1316,6 @@
             </ul>
           </div>
         </div>
-
-        <p class="dl-note">当前最终物料统一放在仓库根目录的 <code>public/</code> 中：包含 <code>logos/</code>、<code>materials/</code> 与 <code>downloads/</code>。后续只维护这一套单一资产结构。</p>
       </section>
 
     </div>
@@ -1329,7 +1324,6 @@
       <div class="container">
         <p>UNBOUNDX (Beyond Dimensions) Brand Identity © 2026</p>
         <p style="margin-top: 8px;">自由维度（深圳）科技有限公司</p>
-        <p style="margin-top: 8px;"><a href="unboundx-brand-guidelines-dark.html">Latest Dark Preview</a></p>
       </div>
     </footer>
   </div>
