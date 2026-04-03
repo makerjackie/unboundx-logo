@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">UNBOUNDX mark</title>
+  <desc id="desc">Two intersecting arcs forming the UNBOUNDX symbol.</desc>
+  <rect width="128" height="128" rx="32" fill="#050505"/>
+  <g transform="translate(24 24) scale(1.14)">
+    <path d="M 10 10 Q 70 40 70 70" fill="none" stroke="#F26122" stroke-width="13" stroke-linecap="round"/>
+    <path d="M 10 70 Q 70 40 70 10" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+  </g>
+</svg>

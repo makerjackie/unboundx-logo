@@ -219,11 +219,29 @@ def write_public_readme() -> None:
 
 This folder contains the current delivery-ready assets for the latest `index.html` brand site.
 
+- `index.html` / `unboundx-brand-guidelines-dark.html`：线上部署页
 - `logos/`：最终 Logo 的 SVG / PNG 交付文件
 - `materials/`：主视觉、海报、封面与启动页等常用品牌物料
 - `downloads/`：打包好的下载压缩包
 """,
     )
+
+
+def deployify_html(html: str) -> str:
+    return html.replace('href="public/downloads/', 'href="./downloads/')
+
+
+def sync_deploy_pages() -> None:
+    index_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    dark_html = (ROOT / "unboundx-brand-guidelines-dark.html").read_text(encoding="utf-8")
+    favicon = (ROOT / "favicon.svg").read_text(encoding="utf-8")
+
+    write_public_file("index.html", deployify_html(index_html))
+    write_public_file(
+        "unboundx-brand-guidelines-dark.html",
+        deployify_html(dark_html),
+    )
+    write_public_file("favicon.svg", favicon)
 
 
 def run_rsvg_convert(svg_path: Path, png_path: Path, width: int, height: int) -> None:
@@ -290,6 +308,7 @@ def main() -> None:
     write_public_readme()
     render_pngs()
     build_bundles()
+    sync_deploy_pages()
 
 
 if __name__ == "__main__":
