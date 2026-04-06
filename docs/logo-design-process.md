@@ -75,9 +75,9 @@
 
 ### 5. Dark Guidelines 最终定稿
 
-在最新版本中，项目正式切换到以 `index.html` 为核心的深色规范页方案，并放弃旧的多层框体语言：
+在最新版本中，项目正式切换到以 `public/index.html` 为核心的深色规范页方案，并放弃旧的多层框体语言：
 
-- 最新主稿：`index.html`
+- 最新主稿：`public/index.html`
 - 深色预览别名：`unboundx-brand-guidelines-dark.html`
 - 品牌物料目录：`public/`
 
@@ -114,7 +114,7 @@
 
 - 在线站点：`https://logo.unboundxai.com`
 - 代码仓库：`https://github.com/jackiexiao/unboundx-logo`
-- 最终规范文件：`index.html`
+- 最终规范文件：`public/index.html`
 - 深色规范页别名：`unboundx-brand-guidelines-dark.html`
 - 品牌素材目录：`public/`
 - 历史探索归档：`archive/history/`

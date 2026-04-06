@@ -271,15 +271,11 @@ def deployify_html(html: str) -> str:
 
 
 def sync_deploy_pages() -> None:
-    index_html = (ROOT / "index.html").read_text(encoding="utf-8")
-    dark_html = (ROOT / "unboundx-brand-guidelines-dark.html").read_text(encoding="utf-8")
+    index_html = (PUBLIC_DIR / "index.html").read_text(encoding="utf-8")
     favicon = (ROOT / "favicon.svg").read_text(encoding="utf-8")
 
-    write_public_file("index.html", deployify_html(index_html))
-    write_public_file(
-        "unboundx-brand-guidelines-dark.html",
-        deployify_html(dark_html),
-    )
+    write_public_file("index.html", index_html)
+    write_public_file("unboundx-brand-guidelines-dark.html", index_html)
     write_public_file("favicon.svg", favicon)
 
 
