@@ -19,11 +19,10 @@
   <text x="585" y="254" fill="#FFFFFF" font-family="Outfit, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-0.04em">SURNAME</text>
   <text x="587" y="314" fill="#F26122" font-family="Outfit, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="0.12em">ROLE / TITLE</text>
   <line x1="585" y1="354" x2="920" y2="354" stroke="#1A1A1E" stroke-width="2"/>
-  <text x="585" y="408" fill="#A0A0A5" font-family="Outfit, Arial, sans-serif" font-size="24" font-weight="500">hello@unboundx.tech</text>
-  <text x="585" y="452" fill="#A0A0A5" font-family="Outfit, Arial, sans-serif" font-size="24" font-weight="500">www.unboundx.tech</text>
+  <text x="585" y="408" fill="#A0A0A5" font-family="Outfit, Arial, sans-serif" font-size="24" font-weight="500">hello@unboundxai.com</text>
+  <text x="585" y="452" fill="#A0A0A5" font-family="Outfit, Arial, sans-serif" font-size="24" font-weight="500">www.unboundxai.com</text>
   <text x="585" y="496" fill="#A0A0A5" font-family="Outfit, Arial, sans-serif" font-size="24" font-weight="500">+86 000 0000 0000</text>
   <circle cx="948" cy="112" r="26" stroke="#1A1A1E" stroke-width="2"/>
   <path d="M930 112H966" stroke="#F26122" stroke-width="3" stroke-linecap="round"/>
   <path d="M948 94V130" stroke="#F26122" stroke-width="3" stroke-linecap="round"/>
 </svg>
-
